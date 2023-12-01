@@ -1,27 +1,22 @@
-# StaticWebappsApiDemo
+# Azure static website demo APP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+Front end application created using [NO-FRAMEWORKS-TYPESCRIPT-APP-STARTER](https://github.com/AdamGuar/no-frameworks-typescript-app-starter)
 
-## Development server
+# Tools
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Webpack and webpack plugins
+* ts-loader - loader for compiling .ts files and bundling it into bundle.js
+* css-loader - loader for compiling styles , MiniCssExtractPlugin - for putting them into separate output css file
+* HtmlWebpackPlugin - plugin for fetching index.html entry point from sources and putting it into output folder.
 
-## Code scaffolding
+# How to install / run / build
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* run `npm install` to fetch dependencies, 
+* run `npm start` to start local server, 
+* run `npm run build` to build production app - this will result in creating resources in `/dist` folder
 
-## Build
+Then you only need to update titles, description and apps to start working on your own app.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# License
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Creative Commons (CC) license
