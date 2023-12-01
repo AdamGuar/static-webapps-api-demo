@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "ExampleCSharp": {
-      "commandName": "Project",
-      "commandLineArgs": "--port 7251",
-      "launchBrowser": false
-    }
-  }
-}
