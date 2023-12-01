@@ -1,14 +1,24 @@
 import './app.css';
 
 function init(): void {
-    const button = document.querySelector("#testButton");
-    button?.addEventListener("click", testSubmitHandler);
-  }
+  const button = document.querySelector('#testButton');
+  button?.addEventListener('click', testSubmitHandler);
 
-  function testSubmitHandler(e: Event): void {
-    e.preventDefault();
-    const outputElement = document.querySelector('#output');
-    outputElement.textContent = 'Scripts work!';
-  }
+  const buttonFetch = document.querySelector('#testButtonFetch');
+  buttonFetch?.addEventListener('click', testApi);
+}
 
-  init();
+function testSubmitHandler(e: Event): void {
+  e.preventDefault();
+  const outputElement = document.querySelector('#output');
+  outputElement.textContent = 'Scripts work!';
+}
+
+async function testApi(e: Event) {
+  e.preventDefault();
+  const outputElement = document.querySelector('#outputFetch');
+  const dataFromApi = await (await fetch('/api/ExampleJavaScript')).text()
+  outputElement.textContent = dataFromApi;
+}
+
+init();
